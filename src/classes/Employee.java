@@ -1,6 +1,7 @@
 package classes;
 
 
+import exceptions.NoAssignedException;
 import interfaces.IAttend;
 
 
@@ -34,7 +35,11 @@ public class Employee extends Person implements IAttend {
 		this.subareaWorker = subareaWorker;
 		this.rangeEmployee = rangeEmployee;
 		this.seniority = seniority;
-		this.salary = salary;
+		setSalary(salary);
+	}
+
+	public Employee() {
+		super();
 	}
 
 	public int getIdEmployee() {
@@ -91,7 +96,17 @@ public class Employee extends Person implements IAttend {
 	}
 
 	public void setSalary(float salary) {
-		this.salary = salary;
+		try {
+			if (salary > 0) {
+				this.salary = salary;
+			}else if (salary == 0) {
+				throw new NoAssignedException("No Assigned value");
+			}else{
+				System.out.println("Please, insert a valid salary");
+			}
+		}catch(NoAssignedException e){
+			System.out.println("The salary cant' be null");
+		}
 	}
 
 

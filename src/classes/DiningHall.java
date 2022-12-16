@@ -2,7 +2,6 @@ package classes;
 
 import interfaces.IEnable;
 
-import java.time.LocalDate;
 import java.time.LocalTime;
 
 public class DiningHall extends Building implements IEnable {

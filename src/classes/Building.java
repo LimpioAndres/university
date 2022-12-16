@@ -33,8 +33,8 @@ public abstract class Building{
 	@Override
 	public String toString() {
 
-		return  " Name of building: " + buildingsName + "\n" +
-				" Number floor's = " + floor;
+		return  "Name of building= " + buildingsName + "\n" +
+				"Number floor's = " + floor;
 	}
 
 }

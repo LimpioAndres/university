@@ -6,32 +6,34 @@ import java.time.LocalTime;
 
 public class Classroom extends Building implements IEnable {
 	
-	private short idClassroom; //number of classroom at the university
-	private byte hours; // To organize a Schedule that includes the different subjects taking in this space
-	private byte minutes; // To organize a Schedule that includes the different subjects taking in this space
+	private int idClassroom; //number of classroom at the university
+	private int hours; // To organize a Schedule that includes the different subjects taking in this space
+	private int minutes; // To organize a Schedule that includes the different subjects taking in this space
 	private Subject subject;
 
-	public Classroom (short idClassroom, byte hours, byte minutes, String buildingsName, String floor){
+	public Classroom (int idClassroom, int hours, int minutes, String buildingsName, String floor){
+
 		super(buildingsName, floor);
+
 		this.idClassroom = idClassroom;
 		setHours(hours);
 		setMinutes(minutes);
 		this.subject = subject;
 	}
 
-	public short getIdClassroom() {
+	public int getIdClassroom() {
 		return idClassroom;
 	}
 
-	public void setIdClassroom(short idClassroom) {
+	public void setIdClassroom(int idClassroom) {
 		this.idClassroom = idClassroom;
 	}
 
-	public byte getHours() {
+	public int getHours() {
 		return hours;
 	}
 
-	public void setHours(byte hours) {
+	public void setHours(int hours) {
 		if(hours >=00 || hours <=23) {
 			this.hours = hours;
 		}else{
@@ -39,11 +41,11 @@ public class Classroom extends Building implements IEnable {
 		}
 	}
 
-	public byte getMinutes() {
+	public int getMinutes() {
 		return minutes;
 	}
 
-	public void setMinutes(byte minutes) {
+	public void setMinutes(int minutes) {
 		if(minutes >=0 || minutes <=60) {
 			this.minutes = minutes;
 		}else{

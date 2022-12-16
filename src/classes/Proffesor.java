@@ -2,13 +2,8 @@ package classes;
 
 import interfaces.ITeach;
 
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
-import java.time.format.FormatStyle;
-import java.util.InputMismatchException;
 import java.util.Objects;
-import java.util.Scanner;
+
 
 
 public class Proffesor extends Employee implements ITeach {
@@ -30,6 +25,13 @@ public class Proffesor extends Employee implements ITeach {
 		this.subject = subject;
 		this.school = school;
 		this.classroom = classroom;
+	}
+
+	Proffesor (int idProffesor, String name, String lastName){
+		super();
+		setName(name);
+		setLastName(lastName);
+		this.idProffesor = idProffesor;
 	}
 	public int getIdProffesor() {
 		return idProffesor;
@@ -99,6 +101,13 @@ public class Proffesor extends Employee implements ITeach {
 		System.out.println("The students: " + getStudent().getName()
 				+ "attend to the classroom: " + getClassroom().getIdClassroom() + "in subject: " +
 				getSubject().getNameSubject());
+
+	}
+
+	@Override
+	public String toString() {
+
+		return  "[Id Proffesor= " + getIdProffesor() +" "+" Full Name= " + getName() +" " +getLastName() + "]";
 
 	}
 

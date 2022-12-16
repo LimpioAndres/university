@@ -1,5 +1,6 @@
 package classes;
 
+import exceptions.NullGameException;
 import interfaces.IEnable;
 
 import java.time.LocalDateTime;
@@ -25,8 +26,12 @@ public final class SportsArena extends Building implements IEnable {
 		return teams;
 	}
 
-	public void setTeams(String teams) {
-		this.teams = teams;
+	public void setTeams(String teams) throws NullGameException {
+		if (teams == null){
+			throw new NullGameException();
+		}else {
+			this.teams = teams;
+		}
 	}
 
 	public String getSport_name() {

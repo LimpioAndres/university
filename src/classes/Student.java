@@ -1,11 +1,12 @@
 package classes;
 
 import interfaces.IStudy;
+import methods.RandomGenerate;
 
 import java.util.Objects;
-import java.util.logging.Logger;
 
-public class Student extends Person implements IStudy{
+
+public class Student extends Person implements IStudy {
 	
 	private int studentId; //{1234, 6789, 1011};
 	private String grade; //{"A","B", "A-"}; // Quality Points per subject of the students
@@ -14,10 +15,11 @@ public class Student extends Person implements IStudy{
 	private Proffesor proffesor;
 	private Classroom classroom;
 
-	public Student(int studentId, String grade, float gpa, String name, String lastName, int age, int phoneNumber){
+	public Student (int studentId, String grade, float gpa, String name, String lastName, int age, int phoneNumber,
+					Subject subject, Proffesor proffesor, Classroom classroom){
 		super(name, lastName, age, phoneNumber);
 
-		this.studentId = studentId;
+		setStudentId(RandomGenerate.generateNumberRandom(1, 60000));
 		this.grade = grade;
 		this.gpa = gpa;
 		this.subject = subject;
@@ -91,7 +93,14 @@ public class Student extends Person implements IStudy{
 		return Objects.equals(studentId, other.studentId) && Objects.equals(subject, other.subject);
 	}
 
+	@Override
+	public String toString() {
+		return  "Full Name= " + getName() +" " +getLastName() +" | "+ "Phone Number= "+getPhoneNumber() +" - "+
+				"{Student ID= " + studentId +" "+ "Grade= " + grade + " "+  "GPA= "+ gpa + "}" +"\n"+ subject +"\n"+
+				proffesor +"\n"+ classroom + "\n";
+	}
 
+	//----------Interface----------
 	@Override
 	public void study(){
 
@@ -105,5 +114,6 @@ public class Student extends Person implements IStudy{
 			System.out.println("This student don't fulfill with a minimum approval score ");
 		}
 	}
+
 
 }

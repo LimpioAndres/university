@@ -4,11 +4,11 @@ import interfaces.IAllowPassengers;
 
 public final class Transport implements IAllowPassengers { //buses assigned to the university
 
-	private String model; //{"Mercedes Citaro", "Mercedes Tourismo"}
-	private byte capacitySeats; //{40, 50, 60}; //seats in each bus
-	private byte quantityPassengers; //{30, 45, 57};
+	private  String model;
+	private int capacitySeats;
+	private int quantityPassengers;
 
-	public Transport(String model, byte capacitySeats, byte quantityPassengers) {
+	public Transport(String model, int capacitySeats, int quantityPassengers) {
 
 		this.model = model;
 		this.capacitySeats = capacitySeats;
@@ -23,19 +23,19 @@ public final class Transport implements IAllowPassengers { //buses assigned to t
 		this.model = model;
 	}
 
-	public byte getCapacitySeats() {
+	public int getCapacitySeats() {
 		return capacitySeats;
 	}
 
-	public void setCapacitySeats(byte capacitySeats) {
+	public void setCapacitySeats(int capacitySeats) {
 		this.capacitySeats = capacitySeats;
 	}
 
-	public byte getQuantityPassengers() {
+	public int getQuantityPassengers() {
 		return quantityPassengers;
 	}
 
-	public void setQuantityPassengers(byte quantityPassengers) {
+	public void setQuantityPassengers(int quantityPassengers) {
 		this.quantityPassengers = quantityPassengers;
 	}
 
@@ -46,11 +46,16 @@ public final class Transport implements IAllowPassengers { //buses assigned to t
 
 			if (getQuantityPassengers() == getCapacitySeats()) {
 				System.out.println("The bus start his ride");
-			}else if (getQuantityPassengers() < getCapacitySeats() && getQuantityPassengers() >=0 && getQuantityPassengers() >= 0 ) {
+			}else if (getQuantityPassengers() < getCapacitySeats()) {
 				System.out.println("The bust is waiting for more passengers");
 			}
 	}
 
+	public String toString() {
 
+		return  "[Model bus= " + getModel() +" | "+ "Capacity Seats= " + getCapacitySeats() +" | "+
+				"Quantity Of Passengers= " + getQuantityPassengers() + "]" + "\n";
+
+	}
 
 }

@@ -17,6 +17,11 @@ public class Subject {
 		this.school = school;
 	}
 
+	public Subject(int idSubject, String nameSubject){
+		this.idSubject = idSubject;
+		this.nameSubject = nameSubject;
+	}
+
 	public int getIdSubject() {
 		return idSubject;
 	}
@@ -48,4 +53,12 @@ public class Subject {
 	public void setSchool(School school) {
 		this.school = school;
 	}
+
+
+	public String toString() {
+
+		return  "[Id Subject= " + getIdSubject() +" "+ " Subject Name= " + getNameSubject() + "]";
+
+	}
+
 }

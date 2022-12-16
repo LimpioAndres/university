@@ -1,10 +1,8 @@
 package exceptions;
 
-public class NegativeQuantityException extends Exception{
+public class NegativeQuantityException extends RuntimeException{
 
-    public NegativeQuantityException(){
-
-
-        super("The quantity must be positive");
+    public NegativeQuantityException(String message){
+        super(message);
     }
 }
