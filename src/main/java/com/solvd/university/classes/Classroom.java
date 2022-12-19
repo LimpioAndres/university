@@ -23,10 +23,8 @@ public class Classroom extends Building implements IEnable {
 
 		super(buildingsName, floor);
 
-		if(minutes < 0 || minutes > 60 && hours < 0 || hours > 23) {
+		if(minutes < 0 || minutes > 60 || hours < 0 || hours > 23) {
 			throw new HourFormatException();
-		}else{
-			LOGGER.error("Insert a valid hour and minute");
 		}
 		this.idClassroom = idClassroom;
 		this.hours = hours;

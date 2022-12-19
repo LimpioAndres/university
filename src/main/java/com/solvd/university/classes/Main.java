@@ -38,7 +38,7 @@ public class Main {
         Proffesor proffesor2 = new Proffesor(7864, "Elizabeth", "Rios");
 
 
-        campus.add(new Campus("", "Monagas, Venezuela",
+        campus.add(new Campus("Universidad de Oriente", "Monagas, Venezuela",
                 "From people we come, to people us go", "Milena Bravo de Romero"));
         LOGGER.log(Level.TRACE, "\n" + "University details");
         ShowList.listDetailed(campus);
