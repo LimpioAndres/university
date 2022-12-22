@@ -74,9 +74,9 @@ public class Classroom extends Building implements IEnable {
 		LocalTime doorClosed = LocalTime.of(18,01);
 
 		if (timeNow.isAfter(doorsOpened) && timeNow.isBefore(doorClosed)){
-			System.out.println("The Classrooms are opened for classes");
+			LOGGER.info("The Classrooms are opened for classes");
 		}else {
-			System.out.println("The Classrooms are closed");
+			LOGGER.info("The Classrooms are closed");
 		}
 	}
 }

@@ -1,8 +1,5 @@
 package com.solvd.university.classes;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 public abstract class Person {
 	private int personalId;
 	private String name;
@@ -10,7 +7,6 @@ public abstract class Person {
 	private int age;
 	private long phoneNumber;
 
-	private static final Logger LOGGER = LogManager.getLogger(Person.class);
 
 	//---------Constructor---------
 

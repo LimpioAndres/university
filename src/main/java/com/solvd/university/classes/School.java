@@ -1,6 +1,8 @@
 package com.solvd.university.classes;
 
 import com.solvd.university.interfaces.IEnable;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -8,6 +10,8 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 
 public class School extends Building implements IEnable {
+
+	private static final Logger LOGGER = LogManager.getLogger(School.class);
 
 	private String name; //{"Engineering", "Social", "Sports", "Science Applied", "Administrative"};
 	private String areaStudy; /*{"Systems Engineering", "Petroleum", "Administration", "Accounting",
@@ -71,10 +75,10 @@ public class School extends Building implements IEnable {
 		LocalTime doorClosed = LocalTime.of(16,01);
 
 		if (timeNow.isAfter(doorsOpened) && timeNow.isBefore(doorClosed)){
-			System.out.println(actualdate);
-			System.out.println(" The School is opened ");
+			LOGGER.info(actualdate);
+			LOGGER.info(" The School is opened ");
 		}else {
-			System.out.println(" The School is closed, if you need a consult with a teacher, come tomorrow. ");
+			LOGGER.info(" The School is closed, if you need a consult with a teacher, come tomorrow. ");
 		}
 	}
 }

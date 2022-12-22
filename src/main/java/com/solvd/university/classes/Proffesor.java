@@ -4,7 +4,6 @@ import com.solvd.university.exceptions.NegativeQuantityException;
 import com.solvd.university.interfaces.ITeach;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import java.util.Objects;
 
 
@@ -25,13 +24,13 @@ public class Proffesor extends Employee implements ITeach {
 		super(idEmployee, typeEmployee, areaWorker, subareaWorker, rangeEmployee, seniority, salary, name,
 				lastName, age, phoneNumber);
 
-		/*try {
+		try {
 			if (age < 0){
 				throw new NegativeQuantityException("The quantity isert is negative, must be positive");
 			}
 		}catch(NegativeQuantityException e) {
 			LOGGER.error("The negative age doesn't exists, please isert a right value");
-		}*/
+		}
 
 		this.idProffesor = idProffesor;
 		this.student = student;

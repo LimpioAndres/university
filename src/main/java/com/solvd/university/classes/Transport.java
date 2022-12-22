@@ -1,7 +1,12 @@
 package com.solvd.university.classes;
 
 import com.solvd.university.interfaces.IAllowPassengers;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public final class Transport implements IAllowPassengers { //buses assigned to the university
+
+	private static final Logger LOGGER = LogManager.getLogger(Transport.class);
 
 	private  String model;
 	private int capacitySeats;
@@ -48,9 +53,9 @@ public final class Transport implements IAllowPassengers { //buses assigned to t
 
 
 			if (getQuantityPassengers() == getCapacitySeats()) {
-				System.out.println("The bus start his ride");
+				LOGGER.info("The bus start his ride");
 			}else if (getQuantityPassengers() < getCapacitySeats()) {
-				System.out.println("The bust is waiting for more passengers");
+				LOGGER.info("The bust is waiting for more passengers");
 			}
 	}
 

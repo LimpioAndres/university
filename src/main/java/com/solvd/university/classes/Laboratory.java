@@ -75,9 +75,9 @@ public class Laboratory extends Building implements IEnable {
 		LocalTime doorClosed = LocalTime.of(19,01);
 
 		if (timeNow.isAfter(doorsOpened) && timeNow.isBefore(doorClosed)){
-			System.out.println("The Laboratories are opened");
+			LOGGER.info("The Laboratories are opened");
 		}else {
-			System.out.println("The Laboratories are closed");
+			LOGGER.info("The Laboratories are closed");
 		}
 	}
 }

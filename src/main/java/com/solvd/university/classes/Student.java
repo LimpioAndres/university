@@ -122,13 +122,13 @@ public class Student extends Person implements IStudy {
 	public void study(){
 
 		if (getGpa() >= 4.9f && getGpa() <=5){
-			System.out.println("This student achieved the 'Summa Cum Laude' recognition ");
+			LOGGER.info("This student achieved the 'Summa Cum Laude' recognition ");
 		}else if (getGpa() >= 4.70f && getGpa() <= 4.89f){
-			System.out.println("This student achieved the 'Magna Cum Laude' recognition ");
+			LOGGER.info("This student achieved the 'Magna Cum Laude' recognition ");
 		}else if (getGpa() >= 3.0f && getGpa() <= 4.69f) {
-			System.out.println("Enabled to attend classes ");
+			LOGGER.info("Enabled to attend classes ");
 		}else{
-			System.out.println("This student don't fulfill with a minimum approval score ");
+			LOGGER.info("This student don't fulfill with a minimum approval score ");
 		}
 	}
 

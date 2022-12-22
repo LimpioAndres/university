@@ -5,10 +5,7 @@ import com.solvd.university.methods.*;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
 
 
 public class Main {
@@ -23,7 +20,7 @@ public class Main {
         ArrayList<Subject> subject = new ArrayList<>();
         ArrayList<Proffesor> proffesor = new ArrayList<>();
         ArrayList<Classroom> classroom = new ArrayList<>();
-        List<Transport> transport = new LinkedList<>();
+        ArrayList<Transport> transport = new ArrayList<>();
 
 
         //Adding value to attributes in objects
@@ -40,7 +37,7 @@ public class Main {
 
         campus.add(new Campus("Universidad de Oriente", "Monagas, Venezuela",
                 "From people we come, to people us go", "Milena Bravo de Romero"));
-        LOGGER.log(Level.TRACE, "\n" + "University details");
+        LOGGER.log(Level.INFO, "\n" + "University details" + "\n");
         ShowList.listDetailed(campus);
 
 
@@ -52,23 +49,25 @@ public class Main {
                 433457890, subject1, proffesor1, classroom1));
         student.add(new Student(0, "B", 3.9F, "Tim", "Thyf", 22,
                 133453890, subject1, proffesor1, classroom1));
-        LOGGER.trace("Students details");
+        LOGGER.info("Students details" + "\n");
         ShowList.listDetailed(student);
 
+        LOGGER.info("Students status");
         for (Student iterators:student) {
-            System.out.println("Student full name= " + iterators.getName() + " " + iterators.getLastName());
+            LOGGER.info("Student full name= " + iterators.getName() + " " + iterators.getLastName());
             iterators.study();
         }
+        LOGGER.info("\n");
 
         transport.add(new Transport ("Mercedes Citaro 2020", 30, 19));
         transport.add(new Transport ("Mercedes Citaro E 2022", 60, 60));
         transport.add(new Transport ("Encava ENT610 2019", 56, 33));
-        transport.add(2, new Transport ("Volvo 9800 2023", 56, 33));
-        LOGGER.trace("Transport details" + "\n");
+        transport.add(2, new Transport ("Volvo 9800 2023", 56, 39));
+        LOGGER.info("Transport details" + "\n");
         ShowList.listDetailed(transport);
 
         for (Transport iterator:transport) {
-            LOGGER.trace("Passengers per buses= " + iterator.getModel());
+            LOGGER.info("Passengers per buses= " + iterator.getQuantityPassengers());
         }
 
 

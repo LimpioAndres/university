@@ -1,10 +1,13 @@
 package com.solvd.university.classes;
 
 import com.solvd.university.interfaces.IEnable;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.time.LocalTime;
 
 public final class Library extends Building implements IEnable {
+	private static final Logger LOGGER = LogManager.getLogger(Library.class);
 	
 	private String nameBook;
 	private String descriptionBook;
@@ -65,9 +68,9 @@ public final class Library extends Building implements IEnable {
 		LocalTime doorClosed = LocalTime.of(16, 01);
 
 		if (timeNow.isAfter(doorsOpened) && timeNow.isBefore(doorClosed)) {
-			System.out.println("Library open");
+			LOGGER.info("Library open");
 		} else {
-			System.out.println("The Library will open tomorrow");
+			LOGGER.info("The Library will open tomorrow");
 		}
 	}
 

@@ -69,13 +69,13 @@ public class DiningHall extends Building implements IEnable {
 		LocalTime doorClosed = LocalTime.of(15, 01);
 
 		if (timeNow.isAfter(initCook) && timeNow.equals(finishCook));
-			System.out.println("The lunch still cooking");
+			LOGGER.info("The lunch still cooking");
 
 
 		if (timeNow.isAfter(doorsOpened) && timeNow.isBefore(doorClosed)) {
-			System.out.println("Lunch ready ");
+			LOGGER.info("Lunch ready ");
 		} else {
-			System.out.println("The Lunch done until tomorrow at the same time");
+			LOGGER.info("The Lunch done until tomorrow at the same time");
 		}
 	}
 }

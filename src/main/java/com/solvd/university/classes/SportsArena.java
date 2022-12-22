@@ -2,11 +2,16 @@ package com.solvd.university.classes;
 
 import com.solvd.university.exceptions.NullGameException;
 import com.solvd.university.interfaces.IEnable;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
 public final class SportsArena extends Building implements IEnable {
+
+	private static final Logger LOGGER = LogManager.getLogger(SportsArena.class);
 	
 	private String teams; //{"Crows", "Eagles", "Birds", "Visit"}
 	private String sport_name; //{"Soccer", "Basketball", "Baseball"};
@@ -67,9 +72,9 @@ public final class SportsArena extends Building implements IEnable {
 		LocalTime doorClosed = LocalTime.of(19, 01);
 
 		if (timeNow.isAfter(doorsOpened) && timeNow.isBefore(doorClosed)) {
-			System.out.println("The Sports Starts early");
+			LOGGER.info("The Sports Starts early");
 		} else {
-			System.out.println("Tomorrow is a new day to do new exercises");
+			LOGGER.info("Tomorrow is a new day to do new exercises");
 		}
 	}
 }

@@ -1,11 +1,14 @@
 package com.solvd.university.classes;
 
 import com.solvd.university.interfaces.IEnable;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.time.LocalTime;
 
 public class Garage extends Building implements IEnable {
-	
+
+	private static final Logger LOGGER = LogManager.getLogger(Garage.class);
 	private byte capacityBuses;
 	private String routes;
 	private Transport transport;
@@ -57,9 +60,9 @@ public class Garage extends Building implements IEnable {
 		LocalTime doorClosed = LocalTime.of(20, 01);
 
 		if (timeNow.isAfter(doorsOpened) && timeNow.isBefore(doorClosed)) {
-			System.out.println(" Opened Garage, the buses can start their routes ");
+			LOGGER.info(" Opened Garage, the buses can start their routes ");
 		} else {
-			System.out.println("Closed Garage");
+			LOGGER.info("Closed Garage");
 		}
 	}
 }

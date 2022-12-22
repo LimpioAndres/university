@@ -2,7 +2,6 @@ package com.solvd.university.classes;
 
 
 import com.solvd.university.exceptions.NegativeQuantityException;
-import com.solvd.university.exceptions.NoAssignedException;
 import com.solvd.university.interfaces.IAttend;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -147,10 +146,10 @@ public class Employee extends Person implements IAttend {
 		boolean loop = false;
 		int attendanceCheck;
 
-		System.out.println(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL).format(dateActual));
-		System.out.println(DateTimeFormatter.ofLocalizedTime(FormatStyle.SHORT).format(actualTime));
+		LOGGER.info(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL).format(dateActual));
+		LOGGER.info(DateTimeFormatter.ofLocalizedTime(FormatStyle.SHORT).format(actualTime));
 
-		System.out.println("Please, mark your attendance with your id number: ");
+		LOGGER.info("Please, mark your attendance with your id number: ");
 
 		while (loop == false) {
 			try {
@@ -158,18 +157,18 @@ public class Employee extends Person implements IAttend {
 				attendanceCheck = index.nextInt();
 
 				if (attendanceCheck == idEmployee && actualTime.isBefore(maxTimeAttendance) || actualTime == maxTimeAttendance) {
-					System.out.println("Welcome");
+					LOGGER.info("Welcome");
 					loop = true;
 				} else if (attendanceCheck == idEmployee && actualTime.isAfter(maxTimeAttendance)) {
-					System.out.println("You are late");
+					LOGGER.info("You are late");
 					loop = true;
 				} else {
-					System.out.println("Please, mark a correct id number: ");
+					LOGGER.info("Please, mark a correct id number: ");
 					loop = false;
 				}
 			} catch (InputMismatchException e) {
 				loop = false;
-				System.out.println("Please, mark a correct id number: ");
+				LOGGER.info("Please, mark a correct id number: ");
 			}
 		}
 	}

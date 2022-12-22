@@ -1,0 +1,49 @@
+2022-12-22 15:37:51,772 [main] INFO  com.solvd.university.classes.Main - 
+University details
+
+2022-12-22 15:37:51,822 [main] INFO  com.solvd.university.methods.ShowList - Name of university: Universidad de Oriente |  Address : Monagas, Venezuela
+Motto: From people we come, to people us go |  Rector Full Name: Milena Bravo de Romero
+
+2022-12-22 15:37:51,829 [main] INFO  com.solvd.university.classes.Main - Students details
+
+2022-12-22 15:37:51,987 [main] INFO  com.solvd.university.methods.ShowList - Full Name= Andres Limpio | Age= 29 | Phone Number= 1234567890 - {Student ID= 41636 Grade= A GPA= 4.7}
+[Id Subject= 189762  Subject Name= Math IV]
+[Id Proffesor= 8274  Full Name= Jhon Smith]
+Name of building= Module 1
+Number floor's = Floor 2
+
+2022-12-22 15:37:51,988 [main] INFO  com.solvd.university.methods.ShowList - Full Name= Jess Thame | Age= 19 | Phone Number= 433457890 - {Student ID= 6176 Grade= A+ GPA= 5.0}
+[Id Subject= 198756  Subject Name= Data Abstraction]
+[Id Proffesor= 3465  Full Name= Alejandra Firmino]
+Name of building= Module 2
+Number floor's = Floor 3
+
+2022-12-22 15:37:51,990 [main] INFO  com.solvd.university.methods.ShowList - Full Name= Tim Thyf | Age= 22 | Phone Number= 133453890 - {Student ID= 52912 Grade= B GPA= 3.9}
+[Id Subject= 198756  Subject Name= Data Abstraction]
+[Id Proffesor= 3465  Full Name= Alejandra Firmino]
+Name of building= Module 2
+Number floor's = Floor 3
+
+2022-12-22 15:37:51,991 [main] INFO  com.solvd.university.classes.Main - Students status
+2022-12-22 15:37:51,994 [main] INFO  com.solvd.university.classes.Main - Student full name= Andres Limpio
+2022-12-22 15:37:51,995 [main] INFO  com.solvd.university.classes.Student - This student achieved the 'Magna Cum Laude' recognition 
+2022-12-22 15:37:51,995 [main] INFO  com.solvd.university.classes.Main - Student full name= Jess Thame
+2022-12-22 15:37:51,996 [main] INFO  com.solvd.university.classes.Student - This student achieved the 'Summa Cum Laude' recognition 
+2022-12-22 15:37:51,997 [main] INFO  com.solvd.university.classes.Main - Student full name= Tim Thyf
+2022-12-22 15:37:52,014 [main] INFO  com.solvd.university.classes.Student - Enabled to attend classes 
+2022-12-22 15:37:52,015 [main] INFO  com.solvd.university.classes.Main - 
+
+2022-12-22 15:37:52,018 [main] INFO  com.solvd.university.classes.Main - Transport details
+
+2022-12-22 15:37:52,033 [main] INFO  com.solvd.university.methods.ShowList - [Model bus= Mercedes Citaro 2020 | Capacity Seats= 30 | Quantity Of Passengers= 19]
+
+2022-12-22 15:37:52,034 [main] INFO  com.solvd.university.methods.ShowList - [Model bus= Mercedes Citaro E 2022 | Capacity Seats= 60 | Quantity Of Passengers= 60]
+
+2022-12-22 15:37:52,034 [main] INFO  com.solvd.university.methods.ShowList - [Model bus= Volvo 9800 2023 | Capacity Seats= 56 | Quantity Of Passengers= 39]
+
+2022-12-22 15:37:52,034 [main] INFO  com.solvd.university.methods.ShowList - [Model bus= Encava ENT610 2019 | Capacity Seats= 56 | Quantity Of Passengers= 33]
+
+2022-12-22 15:37:52,035 [main] INFO  com.solvd.university.classes.Main - Passengers per buses= 19
+2022-12-22 15:37:52,035 [main] INFO  com.solvd.university.classes.Main - Passengers per buses= 60
+2022-12-22 15:37:52,036 [main] INFO  com.solvd.university.classes.Main - Passengers per buses= 39
+2022-12-22 15:37:52,036 [main] INFO  com.solvd.university.classes.Main - Passengers per buses= 33
