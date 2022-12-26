@@ -9,9 +9,10 @@ public class ShowList {
 
     private static final Logger LOGGER = LogManager.getLogger(ShowList.class);
     public static void listDetailed(List<?> list){
-        for (Object count: list){
+
+        list.stream().forEach((Object count) -> {
             LOGGER.info(count);
-        }
+        });
     }
 
 }

@@ -1,86 +1,133 @@
 package com.solvd.university.linkedList;
 
 public class LinkedList<T> {
+    private Node<T> firstNode = null;
+    private Node<T> lastNode = null;
+    private int length = 0;
 
-    private Node<T> head;
+    private Node<T> ithNode(int index){
+        if (index < 0 || index >= length)
+            throw new ArrayIndexOutOfBoundsException("Cannot access element with index " + index
+                    + " in list with " + length + " elements!");
 
-    public void addFirst(T t) {
-        Node<T> firstNode = new Node<>(t);
-        firstNode.next = head;
-        head = firstNode;
+        Node<T> iNode = firstNode;
+
+        // Starts from 1 because 0th node is already selected
+        for (int i = 1; i <= index; i++) iNode = iNode.getNextNode();
+
+        return iNode;
     }
 
-    public void addLast(T t) {
-        if (head == null) {
-            head = new Node<>(t);
-            return;
-        }
-        Node<T> currentNode = head;
-        while (currentNode.next != null) {
-            currentNode = currentNode.next;
-        }
-        currentNode.next = new Node<>(t);
+
+    public void addFirst(T value){
+        add(value, 0);
     }
 
-    public int get(T t) {
-        if (head == null) {
-            return -1;
-        }
-        if (head.value == t) {
-            return 0;
-        }
-        Node<T> currentNode = head;
-        int result = 0;
-        while (currentNode.next != null) {
-            ++result;
-            if (currentNode.next.value == t) {
-                return result;
-            }
-            currentNode = currentNode.next;
-        }
-        return -1;
+    public void addLast(T value){
+        add(value, length);
     }
 
-    public void remove(T t) {
-        if (head == null) {
-            return;
-        }
-        if (head.value == t) {
-            head = head.next;
-            return;
-        }
-        Node<T> currentNode = head;
-        while (currentNode.next != null) {
-            if (currentNode.next.value == t) {
-                currentNode.next = currentNode.next.next;
-                return;
-            }
-            currentNode = currentNode.next;
-        }
+    // By default adds new element at the end of the list
+    public void add(T value){
+        add(value, length);
     }
+
+    // If index == length, item is added at the end of the list
+    public void add(T value, int index){
+        Node<T> node = new Node<T>(value);
+        Node<T> newPrev = lastNode;
+
+        if (index == length) lastNode = node;
+        else {
+            Node<T> newNext = ithNode(index);
+            newPrev = newNext.getPrevNode();
+            node.setNextNode(newNext);
+            newNext.setPrevNode(node);
+        }
+
+        if (index == 0) firstNode = node;
+        else {
+            node.setPrevNode(newPrev);
+            newPrev.setNextNode(node);
+        }
+
+        length++;
+    }
+
 
     @Override
-    public String toString() {
-        return "LinkedList{" +
-                "head=" + head +
-                '}';
+    public String toString(){
+        return toString(false);
     }
 
-    private static class Node<T> {
-        private final T value;
-        private Node<T> next;
+    public String toStringReverse(){
+        return toString(true);
+    }
 
-        public Node(T value) {
+    public String toString(boolean reverse){
+        String nodeString = "";
+        Node<T> node = reverse ? lastNode : firstNode;
 
-            this.value = value;
+        while(node != null) {
+            nodeString += String.valueOf(node.getValue());
+            node = reverse ? node.getPrevNode() : node.getNextNode();
+            if (node != null) nodeString += ", ";
         }
 
-        @Override
-        public String toString() {
-            return "Node{" +
-                    "value=" + value +
-                    ", next=" + next +
-                    '}';
-        }
+        return "[" + nodeString + "]";
+    }
+
+
+    public T removeFirst(){
+        return remove(0);
+    }
+
+    public T removeLast(){
+        return remove(length - 1);
+    }
+
+    // Returns the value of the element removed
+    public T remove(int index){
+        Node<T> node = ithNode(index);
+
+        if (index == 0) firstNode = node.getNextNode();
+        else node.getPrevNode().setNextNode(node.getNextNode());
+
+        if (index == length - 1) lastNode = node.getPrevNode();
+        else node.getNextNode().setPrevNode(node.getPrevNode());
+
+        length--;
+
+        return node.getValue();
+    }
+
+
+    public T getFirst(){
+        return get(0);
+    }
+
+    public T getLast(){
+        return get(length - 1);
+    }
+
+    public T get(int index){
+        return ithNode(index).getValue();
+    }
+
+
+    public void setFirst(T value){
+        set(value, 0);
+    }
+
+    public void setLast(T value){
+        set(value, length - 1);
+    }
+
+    public void set(T value, int index){
+        ithNode(index).setValue(value);
+    }
+
+    public int getLength() {
+        return length;
     }
 }

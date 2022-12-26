@@ -13,12 +13,13 @@ import java.util.stream.Collectors;
 public class FileTask {
 
     public static final void main(String[] args) throws IOException{
-
-            String textIn = FileUtils.readFileToString(new File( "src/main/java/com/solvd/university/tasks/fileCount/text.txt"),
+            String textIn = FileUtils.readFileToString(new File("src/main/java/com/solvd/university/tasks/fileCount/text.txt"),
                     "UTF-8");
-            Map<String, Long> uniqueCount = Arrays.stream(StringUtils.split(textIn, " ,.;:¡!¿?-_()[]{}<>$%#&=+*'´/\"\r\n\uFEFF"))
+            FileUtils.forceDelete(new File("src/main/java/com/solvd/university/tasks/fileCount/textResult.txt"));
+            Map<String, Long> calculateWords = Arrays.stream(StringUtils.split(textIn, " ,.;:¡!¿?-_()[]{}<>$%#&=+*'´/\"\r\n\uFEFF"))
                     .map(StringUtils::upperCase).collect(Collectors.groupingBy(word -> word, Collectors.counting()));
-            for (Map.Entry<String, Long> sorted: uniqueCount.entrySet()){
+            
+            for (Map.Entry<String, Long> sorted : calculateWords.entrySet()) {
                 FileUtils.writeStringToFile(new File("src/main/java/com/solvd/university/tasks/fileCount/textResult.txt"),
                         sorted.getKey() + "= " + sorted.getValue() + "\n", "UTF-8", true);
             }
