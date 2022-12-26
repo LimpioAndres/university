@@ -1,4 +1,4 @@
-package tasks.linkedList;
+package com.solvd.tasks.linkedList;
 
 public class LinkedList<T> {
     private Node<T> firstNode = null;

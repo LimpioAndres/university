@@ -1,4 +1,4 @@
-package tasks.fileCount;
+package com.solvd.tasks.fileCount;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
