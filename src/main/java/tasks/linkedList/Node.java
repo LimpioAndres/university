@@ -1,4 +1,4 @@
-package com.solvd.university.linkedList;
+package tasks.linkedList;
 
 class Node<T> {
     private Node<T> prevNode;

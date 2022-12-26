@@ -1,4 +1,4 @@
-package com.solvd.university.tasks.fileCount;
+package tasks.fileCount;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -18,7 +18,7 @@ public class FileTask {
             FileUtils.forceDelete(new File("src/main/java/com/solvd/university/tasks/fileCount/textResult.txt"));
             Map<String, Long> calculateWords = Arrays.stream(StringUtils.split(textIn, " ,.;:¡!¿?-_()[]{}<>$%#&=+*'´/\"\r\n\uFEFF"))
                     .map(StringUtils::upperCase).collect(Collectors.groupingBy(word -> word, Collectors.counting()));
-            
+
             for (Map.Entry<String, Long> sorted : calculateWords.entrySet()) {
                 FileUtils.writeStringToFile(new File("src/main/java/com/solvd/university/tasks/fileCount/textResult.txt"),
                         sorted.getKey() + "= " + sorted.getValue() + "\n", "UTF-8", true);

@@ -1,4 +1,4 @@
-package com.solvd.university.linkedList;
+package tasks.linkedList;
 
 
 import org.apache.logging.log4j.LogManager;
