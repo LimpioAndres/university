@@ -12,7 +12,7 @@ import java.util.Arrays;
 
 public class Main {
 
-    private static final Logger LOGGER = LogManager.getLogger(ThreadRun.class);
+    private static final Logger LOGGER = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
         Notify hello = new Notify();
@@ -20,6 +20,7 @@ public class Main {
         Field[] fields = hello.getClass().getFields();
         Constructor[] constructors = hello.getClass().getConstructors();
         Method[] methods = hello.getClass().getMethods();
+
 
         Arrays.stream(fields).forEach(LOGGER::info);
         Arrays.stream(constructors).forEach((LOGGER::info));

@@ -1,14 +1,14 @@
-2022-12-28 10:11:58,510 [main] INFO  com.solvd.tasks.threads.ThreadRun - public com.solvd.tasks.reflection.Notify()
-2022-12-28 10:11:58,516 [main] INFO  com.solvd.tasks.threads.ThreadRun - public com.solvd.tasks.reflection.Notify(java.lang.String)
-2022-12-28 10:11:58,517 [main] INFO  com.solvd.tasks.threads.ThreadRun - public boolean com.solvd.tasks.reflection.Notify.equals(java.lang.Object)
-2022-12-28 10:11:58,517 [main] INFO  com.solvd.tasks.threads.ThreadRun - public java.lang.String com.solvd.tasks.reflection.Notify.toString()
-2022-12-28 10:11:58,517 [main] INFO  com.solvd.tasks.threads.ThreadRun - public int com.solvd.tasks.reflection.Notify.hashCode()
-2022-12-28 10:11:58,517 [main] INFO  com.solvd.tasks.threads.ThreadRun - public java.lang.String com.solvd.tasks.reflection.Notify.getMessage()
-2022-12-28 10:11:58,518 [main] INFO  com.solvd.tasks.threads.ThreadRun - public void com.solvd.tasks.reflection.Notify.setMessage(java.lang.String)
-2022-12-28 10:11:58,518 [main] INFO  com.solvd.tasks.threads.ThreadRun - public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
-2022-12-28 10:11:58,518 [main] INFO  com.solvd.tasks.threads.ThreadRun - public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
-2022-12-28 10:11:58,519 [main] INFO  com.solvd.tasks.threads.ThreadRun - public final void java.lang.Object.wait() throws java.lang.InterruptedException
-2022-12-28 10:11:58,519 [main] INFO  com.solvd.tasks.threads.ThreadRun - public final native java.lang.Class java.lang.Object.getClass()
-2022-12-28 10:11:58,519 [main] INFO  com.solvd.tasks.threads.ThreadRun - public final native void java.lang.Object.notify()
-2022-12-28 10:11:58,519 [main] INFO  com.solvd.tasks.threads.ThreadRun - public final native void java.lang.Object.notifyAll()
-2022-12-28 10:11:58,520 [main] INFO  com.solvd.tasks.threads.ThreadRun - HELLO
+2022-12-28 10:24:48,045 [main] INFO  com.solvd.tasks.reflection.Main - public com.solvd.tasks.reflection.Notify()
+2022-12-28 10:24:48,050 [main] INFO  com.solvd.tasks.reflection.Main - public com.solvd.tasks.reflection.Notify(java.lang.String)
+2022-12-28 10:24:48,051 [main] INFO  com.solvd.tasks.reflection.Main - public boolean com.solvd.tasks.reflection.Notify.equals(java.lang.Object)
+2022-12-28 10:24:48,051 [main] INFO  com.solvd.tasks.reflection.Main - public java.lang.String com.solvd.tasks.reflection.Notify.toString()
+2022-12-28 10:24:48,051 [main] INFO  com.solvd.tasks.reflection.Main - public int com.solvd.tasks.reflection.Notify.hashCode()
+2022-12-28 10:24:48,052 [main] INFO  com.solvd.tasks.reflection.Main - public java.lang.String com.solvd.tasks.reflection.Notify.getMessage()
+2022-12-28 10:24:48,052 [main] INFO  com.solvd.tasks.reflection.Main - public void com.solvd.tasks.reflection.Notify.setMessage(java.lang.String)
+2022-12-28 10:24:48,053 [main] INFO  com.solvd.tasks.reflection.Main - public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+2022-12-28 10:24:48,053 [main] INFO  com.solvd.tasks.reflection.Main - public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+2022-12-28 10:24:48,053 [main] INFO  com.solvd.tasks.reflection.Main - public final void java.lang.Object.wait() throws java.lang.InterruptedException
+2022-12-28 10:24:48,054 [main] INFO  com.solvd.tasks.reflection.Main - public final native java.lang.Class java.lang.Object.getClass()
+2022-12-28 10:24:48,054 [main] INFO  com.solvd.tasks.reflection.Main - public final native void java.lang.Object.notify()
+2022-12-28 10:24:48,054 [main] INFO  com.solvd.tasks.reflection.Main - public final native void java.lang.Object.notifyAll()
+2022-12-28 10:24:48,055 [main] INFO  com.solvd.tasks.reflection.Main - HELLO
