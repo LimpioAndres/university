@@ -17,11 +17,13 @@ public class Main {
     public static void main(String[] args) {
         Notify hello = new Notify();
 
-        Field[] fields = hello.getClass().getFields();
+        Field[] fields = hello.getClass().getDeclaredFields();
         Constructor[] constructors = hello.getClass().getConstructors();
         Method[] methods = hello.getClass().getMethods();
 
-
+        Arrays.stream(fields).forEach((iterator)->{
+            LOGGER.info("Name of variable: " + iterator.getName());
+        });
         Arrays.stream(fields).forEach(LOGGER::info);
         Arrays.stream(constructors).forEach((LOGGER::info));
         Arrays.stream(methods).forEach((LOGGER::info));
