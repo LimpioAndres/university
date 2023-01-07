@@ -1,0 +1,7 @@
+
+{
+java:S1488"^Immediately return this expression instead of assigning it to the temporary variable "number".(ç¸Ÿ¿8üÎûÇÑ0
+W
+java:S1118":Add a private constructor to hide the implicit public one.(ò¤§8•ÏûÇÑ0
+F
+java:S2140")Use "java.util.Random.nextInt()" instead.(ç¸Ÿ¿8œÏûÇÑ0

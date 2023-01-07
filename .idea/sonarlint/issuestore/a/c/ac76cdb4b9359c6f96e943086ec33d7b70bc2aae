@@ -1,0 +1,21 @@
+
+z
+java:S4165)"dRemove this useless assignment; "school" already holds the assigned value along all execution paths.(ì™ºù
+‚
+java:S4165*"gRemove this useless assignment; "classroom" already holds the assigned value along all execution paths.(ê²–Úüÿÿÿÿ
+z
+java:S4165'"eRemove this useless assignment; "student" already holds the assigned value along all execution paths.(ˆï¹r
+{
+java:S4165("eRemove this useless assignment; "subject" already holds the assigned value along all execution paths.(¦ë›æ
+\	java:S107"BConstructor has 12 parameters, which is greater than 7 authorized.(½¤˜Üùÿÿÿÿ
+M
+java:S1172"2Remove this unused method parameter "idProffesor".(½¤˜Üùÿÿÿÿ
+S	java:S106u"9Replace this use of System.out or System.err by a logger.(¥±Ù‚ùÿÿÿÿ
+E
+java:S1656)"/Remove or correct this useless self-assignment.(ì™ºù
+J
+java:S1656*"/Remove or correct this useless self-assignment.(ê²–Úüÿÿÿÿ
+E
+java:S1656("/Remove or correct this useless self-assignment.(¦ë›æ
+D
+java:S1656'"/Remove or correct this useless self-assignment.(ˆï¹r

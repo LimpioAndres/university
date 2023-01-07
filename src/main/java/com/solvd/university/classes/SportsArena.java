@@ -5,9 +5,7 @@ import com.solvd.university.interfaces.IEnable;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.time.LocalDateTime;
 import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
 
 public final class SportsArena extends Building implements IEnable {
 

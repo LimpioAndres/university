@@ -1,0 +1,7 @@
+
+S
+java:S1611"=Remove the parentheses around the "iteratorStudent" parameter(«š¦œ
+B
+java:S1602",Remove useless curly braces around statement(«š¦œ
+O
+java:S1612"9Replace this lambda with method reference 'cons::accept'.(«š¦œ

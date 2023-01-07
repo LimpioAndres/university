@@ -1,0 +1,10 @@
+
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—ß¯¤şÿÿÿÿ
+k	java:S117-"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(î‹·ùÿÿÿÿ
+^
+java:S4973"<Strings and Boxed types should be compared using "equals()".(—àõüÿÿÿÿ8¸šÒ0
+j	java:S116"URename this field "sport_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃÊ’Ÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(Ìšß¬
+Q	java:S125"<This block of commented-out lines of code should be removed.(ÃÊ’Ÿ
+c	java:S100)"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç­ç
+h	java:S100-"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(î‹·ùÿÿÿÿ

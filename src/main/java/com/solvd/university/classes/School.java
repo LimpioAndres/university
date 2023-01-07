@@ -6,8 +6,6 @@ import com.solvd.university.interfaces.IEnable;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import javax.naming.Name;
-import java.awt.geom.Area;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;

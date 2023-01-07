@@ -1,16 +1,80 @@
-2022-12-28 16:58:31,018 [main] INFO  com.solvd.tasks.reflection.Main - Name of variable: message
-2022-12-28 16:58:31,026 [main] INFO  com.solvd.tasks.reflection.Main - private java.lang.String com.solvd.tasks.reflection.Notify.message
-2022-12-28 16:58:31,027 [main] INFO  com.solvd.tasks.reflection.Main - public com.solvd.tasks.reflection.Notify()
-2022-12-28 16:58:31,028 [main] INFO  com.solvd.tasks.reflection.Main - public com.solvd.tasks.reflection.Notify(java.lang.String)
-2022-12-28 16:58:31,029 [main] INFO  com.solvd.tasks.reflection.Main - public boolean com.solvd.tasks.reflection.Notify.equals(java.lang.Object)
-2022-12-28 16:58:31,029 [main] INFO  com.solvd.tasks.reflection.Main - public java.lang.String com.solvd.tasks.reflection.Notify.toString()
-2022-12-28 16:58:31,030 [main] INFO  com.solvd.tasks.reflection.Main - public int com.solvd.tasks.reflection.Notify.hashCode()
-2022-12-28 16:58:31,030 [main] INFO  com.solvd.tasks.reflection.Main - public java.lang.String com.solvd.tasks.reflection.Notify.getMessage()
-2022-12-28 16:58:31,031 [main] INFO  com.solvd.tasks.reflection.Main - public void com.solvd.tasks.reflection.Notify.setMessage(java.lang.String)
-2022-12-28 16:58:31,031 [main] INFO  com.solvd.tasks.reflection.Main - public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
-2022-12-28 16:58:31,031 [main] INFO  com.solvd.tasks.reflection.Main - public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
-2022-12-28 16:58:31,032 [main] INFO  com.solvd.tasks.reflection.Main - public final void java.lang.Object.wait() throws java.lang.InterruptedException
-2022-12-28 16:58:31,032 [main] INFO  com.solvd.tasks.reflection.Main - public final native java.lang.Class java.lang.Object.getClass()
-2022-12-28 16:58:31,032 [main] INFO  com.solvd.tasks.reflection.Main - public final native void java.lang.Object.notify()
-2022-12-28 16:58:31,032 [main] INFO  com.solvd.tasks.reflection.Main - public final native void java.lang.Object.notifyAll()
-2022-12-28 16:58:31,033 [main] INFO  com.solvd.tasks.reflection.Main - HELLO
+2023-01-04 22:32:26,829 [main] INFO  com.solvd.university.classes.Main - 
+University details
+
+2023-01-04 22:32:26,876 [main] INFO  com.solvd.university.methods.ShowList - Name of university: Universidad de Oriente |  Address : Monagas, Venezuela
+Motto: From people we come, to people us go |  Rector Full Name: Milena Bravo de Romero
+
+2023-01-04 22:32:26,886 [main] INFO  com.solvd.university.classes.Main - Students details
+
+2023-01-04 22:32:27,015 [main] INFO  com.solvd.university.methods.ShowList - Full Name= Andres Limpio | Age= 29 | Phone Number= 1234567890 - {Student ID= 27674 Grade= A GPA= 4.7}
+[Id Subject= 189762  Subject Name= Math IV]
+[Id Proffesor= 83442  Full Name= Josh Pecker]
+Name of building= Module 1
+Number floor's = Floor 2
+
+2023-01-04 22:32:27,016 [main] INFO  com.solvd.university.methods.ShowList - Full Name= Jess Thame | Age= 19 | Phone Number= 433457890 - {Student ID= 14801 Grade= A+ GPA= 4.9}
+[Id Subject= 198756  Subject Name= Data Abstraction]
+[Id Proffesor= 3465  Full Name= Jhon Smith]
+Name of building= Module 2
+Number floor's = Floor 3
+
+2023-01-04 22:32:27,016 [main] INFO  com.solvd.university.methods.ShowList - Full Name= Tim Thyf | Age= 22 | Phone Number= 133453890 - {Student ID= 56407 Grade= B GPA= 3.9}
+[Id Subject= 198756  Subject Name= Data Abstraction]
+[Id Proffesor= 7864  Full Name= Elizabeth Rios]
+Name of building= Module 1
+Number floor's = Floor 1
+
+2023-01-04 22:32:27,017 [main] INFO  com.solvd.university.classes.Main - Students status
+2023-01-04 22:32:27,019 [main] INFO  com.solvd.university.classes.Main - Student full name= Andres Limpio
+2023-01-04 22:32:27,019 [main] INFO  com.solvd.university.classes.Student - This student achieved the 'Magna Cum Laude' recognition 
+2023-01-04 22:32:27,019 [main] INFO  com.solvd.university.classes.Main - Student full name= Jess Thame
+2023-01-04 22:32:27,020 [main] INFO  com.solvd.university.classes.Student - This student achieved the 'Summa Cum Laude' recognition 
+2023-01-04 22:32:27,020 [main] INFO  com.solvd.university.classes.Main - Student full name= Tim Thyf
+2023-01-04 22:32:27,020 [main] INFO  com.solvd.university.classes.Student - Enabled to attend classes 
+2023-01-04 22:32:27,020 [main] INFO  com.solvd.university.classes.Main - 
+
+2023-01-04 22:32:27,023 [main] INFO  com.solvd.university.classes.Main - Transport details
+
+2023-01-04 22:32:27,040 [main] INFO  com.solvd.university.methods.ShowList - [Model bus= Mercedes Citaro 2020 | Capacity Seats= 30 | Quantity Of Passengers= 19]
+
+2023-01-04 22:32:27,041 [main] INFO  com.solvd.university.methods.ShowList - [Model bus= Mercedes Citaro E 2022 | Capacity Seats= 60 | Quantity Of Passengers= 60]
+
+2023-01-04 22:32:27,041 [main] INFO  com.solvd.university.methods.ShowList - [Model bus= Volvo 9800 2023 | Capacity Seats= 56 | Quantity Of Passengers= 39]
+
+2023-01-04 22:32:27,042 [main] INFO  com.solvd.university.methods.ShowList - [Model bus= Encava ENT610 2019 | Capacity Seats= 56 | Quantity Of Passengers= 33]
+
+2023-01-04 22:32:27,050 [main] INFO  com.solvd.university.classes.Main - Passengers per buses= 19
+2023-01-04 22:32:27,051 [main] INFO  com.solvd.university.classes.Main - Passengers per buses= 60
+2023-01-04 22:32:27,053 [main] INFO  com.solvd.university.classes.Main - Passengers per buses= 39
+2023-01-04 22:32:27,053 [main] INFO  com.solvd.university.classes.Main - Passengers per buses= 33
+2023-01-04 22:32:27,055 [main] INFO  com.solvd.university.classes.Main - 
+
+2023-01-04 22:32:27,061 [main] INFO  com.solvd.university.classes.Main - Teams names and sport= Bulls | Soccer
+2023-01-04 22:32:27,061 [main] INFO  com.solvd.university.classes.Main - Teams names and sport= Tigers | Basketball
+2023-01-04 22:32:27,062 [main] INFO  com.solvd.university.classes.Main - Teams names and sport= Parrots | Baseball
+2023-01-04 22:32:27,062 [main] INFO  com.solvd.university.classes.Main - Teams names and sport= Cats | Soccer
+2023-01-04 22:32:27,063 [main] INFO  com.solvd.university.classes.Main - Teams names and sport= Builders | Baseball
+2023-01-04 22:32:27,063 [main] INFO  com.solvd.university.classes.Main - 
+
+2023-01-04 22:32:27,075 [main] INFO  com.solvd.university.classes.Main - Name of schools: 
+2023-01-04 22:32:27,079 [main] INFO  com.solvd.university.classes.Main - The name of schools are: Engineering
+2023-01-04 22:32:27,080 [main] INFO  com.solvd.university.classes.Main - The name of schools are: Science Applied
+2023-01-04 22:32:27,080 [main] INFO  com.solvd.university.classes.Main - The name of schools are: Administrative
+2023-01-04 22:32:27,080 [main] INFO  com.solvd.university.classes.Main - The name of schools are: Engineering
+2023-01-04 22:32:27,081 [main] INFO  com.solvd.university.classes.Main - 
+
+2023-01-04 22:32:27,089 [main] INFO  com.solvd.university.classes.Main - 5000.0
+2023-01-04 22:32:27,090 [main] INFO  com.solvd.university.classes.Main - 10000.0
+2023-01-04 22:32:27,090 [main] INFO  com.solvd.university.classes.Main - 1500.0
+2023-01-04 22:32:27,092 [main] INFO  com.solvd.university.classes.Main - 
+Teams of Soccer
+2023-01-04 22:32:27,098 [main] INFO  com.solvd.university.classes.Main - Bulls
+2023-01-04 22:32:27,100 [main] INFO  com.solvd.university.classes.Main - Cats
+2023-01-04 22:32:27,105 [main] INFO  com.solvd.university.classes.Main - Student without gpa updated: 
+2023-01-04 22:32:27,112 [main] INFO  com.solvd.university.classes.Main - Name: AndresGPA: 4.7
+2023-01-04 22:32:27,113 [main] INFO  com.solvd.university.classes.Main - Name: JessGPA: 4.9
+2023-01-04 22:32:27,113 [main] INFO  com.solvd.university.classes.Main - Name: TimGPA: 3.9
+2023-01-04 22:32:27,116 [main] INFO  com.solvd.university.classes.Main - Student with gpa updated: 
+2023-01-04 22:32:27,119 [main] INFO  com.solvd.university.classes.Main - Name: AndresGPA: 4.7939997
+2023-01-04 22:32:27,120 [main] INFO  com.solvd.university.classes.Main - Name: JessGPA: 4.998
+2023-01-04 22:32:27,120 [main] INFO  com.solvd.university.classes.Main - Name: TimGPA: 3.978

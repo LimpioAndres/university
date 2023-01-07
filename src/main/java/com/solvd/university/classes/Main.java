@@ -13,10 +13,7 @@ import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Function;
 
-@FunctionalInterface
-interface DisplayInterface{
-    void display();
-}
+
 public class Main {
 
     private static final Logger LOGGER = LogManager.getLogger(Main.class);
@@ -106,7 +103,7 @@ public class Main {
                 new Employee("Ruth", "Gamble", 8000),
                 new Employee("Marco", "Diu", 1200)
         );
-
+        //A simple program with Function
         /*Function<Integer, String> convert = x -> Integer.toString(x);
             LOGGER.info(convert.apply(50).length() + "\n");*/
 
